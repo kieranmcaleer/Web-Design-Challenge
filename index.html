@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar template taken from https://www.w3schools.com/bootstrap/bootstrap_navbar.asp-->
+<nav class="navbar navbar-inverse myBar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="logo-background">
+          <a class="navbar-brand icon" href="#">Latitude</a>
+      </div>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Max Temperature</a></li>
+            <li><a href="#">Humidity</a></li>
+            <li><a href="#">Cloudiness</a></li>
+            <li><a href="#">Wind Speed</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Comparison</a></li>
+        <li><a href="#">Data</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+    <div class="col-lg-8">
+        <h1>Summary: Latitude vs. X</h1>
+        <p>
+            This website is made to compare the latitude of different cities
+            to different variables. These variables include the Max Temperature,
+            Humidity, Cloudiness, and Wind Speed. The data is taken from the OpenWeatherMap
+            API. The graohs were assembled in MatPlotLib. 
+        </p>
+    </div>
+    <div class="col-lg-4">
+        <h3>Visualizations</h3>
+        <p>
+            This website is made to compare the latitude of different cities
+            to different variables. These variables include the Max Temperature,
+            Humidity, Cloudiness, and Wind Speed. The data is taken from the OpenWeatherMap
+            API. The graohs were assembled in MatPlotLib. 
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
